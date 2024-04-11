@@ -1,0 +1,561 @@
+<!--This is a clone version of Narita Group Website made by Alaa Mohammed Youssef as a gift to The best place in my heart-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Narita Group">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narita Group - Rewards</title>
+    <link rel="stylesheet" href="../Css/normalize.css" />
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <link rel="stylesheet" href="../Css/rewards.css" />
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/rewards-pages.js"></script>
+
+  </head>
+  <body>
+   <div class="modal log-form container hidden">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <h2 class="social-text">Or Sign up with social platforms</h2>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2>New here ?</h2>
+            <p>
+             Don't have an account yet? Enter your personal details and start journey with us.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome Back!</h3>
+            <p>
+              To keep connected with us please login with your personal info.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="home" class="header" id="header">
+      <nav class="nav">
+        <a href="../index.html" class="logo"
+          ><img src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
+        <ul class="main-nav hide-mobile">
+          <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
+          <li class="about">
+            <a href="#" class="about-link">About Us</a>
+            <div class="mega-menu mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link active-nav-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              >About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#">
+              What We Do? <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li class="clients">
+            <a href="#">
+              Our Clients <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="active-nav-link-side"><a href="rewards.html">Rewards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="s-welcome container">
+        <div class="account-lang">
+          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
+          <button class="btn-link log-in">Log In</button>
+        </div>
+      </div>
+    </header>
+    <section class="rewards pages container">
+      <div class="text">
+        <h1>Deliver your expectations</h1>
+        <p><i class="fa-solid fa-circle"></i>Narita academy has always been committed to deliver its message and mission to the community, and to make it within the reachable hands to each and every individual and corporate in need, thus, offering a variety of payment facilities and privileges, making it suitable to all different types of clientele, as well as building up a lifetime relationship with them based on trust, respect and efficiency.</p>
+        <p><span> Be sure</span> to check back regularly on naritagroup.com for the latest offers, or be the first to hear by following Narita Group on Twitter, Facebook or sing up to the newsletter.</p>
+      </div>
+      <div class="rewards-content-main">
+        <div class="information-main" data-view="1">
+            <img src="../image/Special-Services.jpg" alt="reward 1">
+            <h2>Special Services</h2>
+        </div>
+        <div class="information-main" data-view="2">
+            <img src="../image/Corporate-Package.jpg" alt="reward 2">
+            <h2>Corporate Package</h2>
+        </div>
+        <div class="information-main" data-view="3">
+          <img src="../image/Business-Package1.jpg" alt="reward 3">
+            <h2>Business Package</h2>            
+        </div>
+        <div class="information-main" data-view="4">
+           <img src="../image/Partnership-Package.jpg" alt="reward 4">
+            <h2>Partnership Package</h2>          
+        </div>
+        <div class="information-main" data-view="5">
+          <img src="../image/Individual-Promotions.jpg" alt="reward 5">
+            <h2>Individual Promotions</h2>
+        </div>
+      </div>
+      <ul class="reward-links">
+        <li class="reward-link" data-view="1">Special Services</li>
+        <li class="reward-link" data-view="2"> Corporate Package </li>
+        <li class="reward-link" data-view="3">Business Package</li>
+        <li class="reward-link" data-view="4">Partnership Package</li>
+        <li class="reward-link" data-view="5">Individual Promotions</li>
+      </ul>
+      <div class="start"></div>
+      <div class="reward reward-1 ">
+        <div class="text">
+        <h1>Special Services</h1>
+        </div>
+        <div class="reward-content">
+          <div class="information">
+            <img src="../image/Narita-Benefits-1.png" alt="Narita-Benefits1">
+              <h2>Narita Benefits</h2>
+              <p>Narita Group delivers your expectation with creative finance solutions with high standard customer loyalty and life-time relationship management to win the client for a life-time.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Family-Benefits-2.png" alt="Narita-Benefits2">
+              <h2>Family Benefits</h2>
+              <p>These benefits are also applicable for employees and their families – in case of settled agreement or signed contract, and employees have to provide their relationship with the company (show work contract, employee ID)</p>
+          </div>
+          <div class="information">
+            <img src="../image/Narita-Benefits-3.png" alt="Narita-Benefits3">
+              <h2>Monthly Payment options</h2>
+              <p>Free monthly payment plan to help manage the education expenses by allowing paying the tuition fee over the course of several months or the full semester, rather than in one lump sum. There are no finance charges, just a low nonrefundable enrollment</p>
+          </div>
+          <div class="information">
+            <img src="../image/Narita-Benefits-4.png" alt="Narita-Benefits4">
+              <h2>Deposit in advance along with monthly payments</h2>
+              <p>25% of deposit is required in advance, which is not refundable, and the rest of the  payment can be paid by monthly over the course of several months or the full contract</p>
+          </div>
+          <div class="information">
+            <img src="../image/Narita-Benefits-5.png" alt="Narita-Benefits5">
+              <h2>Special rate</h2>
+              <p>Student discount, on the spot discount between 5 – 10 %, applying any special promotion through website or social networks</p>
+          </div>
+          <div class="information">
+            <img src="../image/Narita-Benefits-6.png" alt="Narita-Benefits6">
+              <h2>Installment payments (with zero interest)</h2>
+              <p>For Credit Card holders, Premium Cards or Al Ahli Cards</p>
+          </div>
+        </div>
+      </div>
+      <div class="reward reward-2">
+        <div class="text">
+        <h1>Corporate Package</h1>
+        <p><i class="fa-solid fa-circle"></i>Narita Group’s solutions offer a medium for building professional competence, and providing the corporate sector with tailor made solutions with a focus on developing the human capital of international and Egyptian society as a whole.</p>
+        <p><i class="fa-solid fa-circle"></i>Narita Group Corporate Package includes and offers the following benefits and rewards to their corporate partners:</p>
+        </div>
+        <div class="reward-content">
+          <div class="information">
+            <img src="../image/Corporate-1.png" alt="Corporate Package1">
+              <h2>Privilege Voucher book</h2>
+              <p>Narita Group issues his on voucher every year, send as a gift to our VIP partners.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-2.png" alt="Corporate Package2">
+              <h2>Regular Narita Academy News Letters with its latest updates and promotions</h2>
+              <p>High quality customer service to keep in contact and update VIP partner on a regular basis and send invitations and greetings (Ramadan, Aid, New Year, etc.) for them.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-3.png" alt="Corporate Package3">
+              <h2>Membership Card</h2>
+              <p>Each VIP partner is entitled to have Narita Membership Card to register and collect their used trainings, and after the 3. Training courses, he is entitled to get 20 % discount from the next one.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-4.png" alt="Corporate Package4">
+              <h2>Flexible schedules</h2>
+              <p>In case of a group or company trainings, we can offer special timing and private courses for the clients according their needs out of the official schedules.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-5.png" alt="Corporate Package5">
+              <h2>Organize special occasions </h2>
+              <p>if there is a request for it to be able to offer and organize any type of occasions for companies (events, exhibitions, seminars, workshops, etc).</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-6.png" alt="Corporate Package6">
+              <h2>VIP Loyalty Club Membership</h2>
+              <p>Over the VIP program treatment the client has a priority to book any courses or events, and ask for special discount related to his Membership card.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-7.png" alt="Corporate Package7">
+              <h2>Exclusive promotions</h2>
+              <p>on the anniversary of the signed contract date extra discount from the tuition fees,special fare on the birthday of the Holding Company, special promotion on special occasions (like wedding, etc).</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-8.png" alt="Corporate Package8">
+              <h2>Corporate privilege</h2>
+              <p>According the corporation time between the partner and Narita Group.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Corporate-9.png" alt="Corporate Package9">
+              <h2>Cheaper by dozen!* –  (More participant, more benefits)</h2>
+              <p>Every 7th member of your team is free. *Cheaper by dozen! – An American movie, about how to be successful in your life and in your career. </p>
+          </div>
+        </div>
+      </div>
+      <div class="reward reward-3">
+        <div class="text">
+        <h1>Business Package</h1>
+        <p><i class="fa-solid fa-circle"></i>Narita Group recognizes and analysis the importance of your business and its growth, our aim to offer you the best solution, value, combined with every convenience ensuring your business is successful with.</p>
+        </div>
+        <div class="reward-content">
+          <div class="information">
+            <img src="../image/business-1.png" alt="business photo-1">
+              <h2>Personal Account Managers</h2>
+              <p>For regular corporate partners have a right to choose their account managers and deal with the same team all the time.</p>
+          </div>
+          <div class="information">
+            <img src="../image/business-2.png" alt="business photo-2">
+              <h2>Career Counseling and Recruitment Service</h2>
+              <p>follow up the company employment, in case of short of staff, give a hand for hiring new people and give advice to increase the current employees training level and develop their knowledge.</p>
+          </div>
+          <div class="information">
+            <img src="../image/business-3.png" alt="business photo-3">
+              <h2>Regular invitation for events organized by Narita Academy</h2>
+              <p>in case of any events hold by Narita all the members from the Corporate Package has to be invited and sent the invitation for them in advance, followed by a telephone call. They are entitled for 3 free invitations per event.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="reward reward-4">
+        <div class="text">
+        <h1>Partnership Package</h1>
+        <p><i class="fa-solid fa-circle"></i>To be an Ambassador Member is required minimum of one year contract term and renew it by every year to upgrade your VIP levels. The levels start with Bronze, followed by Silver, Gold and the latest is the Diamond Level. Upgrade with each renewed contract. Each level has an access for special discounts and promotions related to the partner needs from training solution till recruitment services.</p>
+        </div>
+        <div class="reward-content">
+          <div class="information">
+            <img src="../image/bronze.png" alt="bronze photo">
+              <h2>Bronze – in the second year of renewing the contract</h2>
+              <p>Entitled for 2 free member of the courses
+
+Pay two trainings and the third is 50 %
+
+Over from the published promotions extra 3 %.</p>
+          </div>
+          <div class="information">
+            <img src="../image/sliver-.png" alt="bronze photo">
+              <h2>Silver – in the third year of renewing the contract</h2>
+              <p>Entitled for 3 free member of the courses
+
+Pay two trainings and the third is free
+
+Over from the published promotions extra 5 %
+
+Extra discount for employees’ children (in case of school / college ID).</p>
+          </div>
+          <div class="information">
+            <img src="../image/gold.png" alt="bronze photo">
+              <h2>Gold – in the fourth year of renewing the contract</h2>
+              <p>Entitled for 4 free member of the courses
+
+Pay one training and the second is free
+
+Over from the published promotions extra 6 %
+
+Extra discount for employees’ children (in case of school / college ID)
+
+Invitation for Narita Gala dinner for the New Year (5 member of the leading and management team + the Ambassador)
+
+New Year gifts for Managers
+
+.</p>
+          </div>
+          <div class="information">
+            <img src="../image/Diamond.png" alt="bronze photo">
+              <h2>Diamond – from the fifth year of renewing the contract</h2>
+              <p>Entitled for 5 free member of the courses
+
+Pay one training and the second is free
+
+Over from the published promotions extra 7 %
+
+Extra discount for employees’ children (in case of school / college ID) and families
+
+Invitation for Narita Gala dinner for the New Year (5 member of the leading and management team + the Ambassador)
+
+New Year gifts for Managers
+
+Any further request by the company will be treated with extra attention and be  loyalty to the company
+
+Organized sightseeing day off once year (with limited number of members: 10 and over the ten clients special fare for the rest of the participants).</p>
+          </div>
+        </div>
+      </div>
+      <div class="reward reward-5">
+        <div class="text">
+        <h1>Individual Promotions</h1>
+        <h2><i class="fa-solid fa-circle"></i>Coming Soon</h2>
+      </div>
+        <!--when add any new information:
+        first change the properties of font-size and text-align to .reward5 .text p in Css file
+        second add this element and repeat element with class name information as the number we want then just complete inside  
+        <div class="reward-content">
+            <div class="information">
+              <img src="../image/..." alt=".... photo">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div> -->
+      </div>
+    </section>
+    <footer class="footer section" id="contact">
+      <div class="row">
+        <div class="col">
+          <img class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+        </div>
+        <div class="col">
+          <h2>Office <div class="underline"><span></span></div></h2>
+          <address>
+            Narita Group Operational Office:
+            <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+          </address>
+        </div>
+        <div class="col others">
+          <h2>Other <div class="underline"><span></span></div></h2>
+          <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="staff-Zone.html">Staff Zone</a></li>
+            <li><a href="recent-post-launch.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="foot-msg-btns">
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
+          </div>
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
+            <div class="form-mail-info">
+            <i class="fa-solid fa-envelope"></i>
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
+          </div>
+          <div class="form-msg-tex">
+            <label for="customer-msg" class="visually-hidden">Your Message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          </form>
+          <div class="social-icon">
+            Follow us 
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+
+<!--This is a clone version of Narita Group Website made by Alaa Mohammed Youssef as a gift to The best place in my heart-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Narita Group">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narita Group - Recent Post</title>
+    <link rel="stylesheet" href="../Css/normalize.css" />
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <link rel="stylesheet" href="../Css/recent-post.css" />
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap"
+    rel="stylesheet"
+    />
+    <script defer src="../js/recent-post.js"></script>
+
+  </head>
+  <body>
+    <div class="modal log-form container hidden">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <h2 class="social-text">Or Sign up with social platforms</h2>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2>New here ?</h2>
+            <p>
+             Don't have an account yet? Enter your personal details and start journey with us.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome Back!</h3>
+            <p>
+              To keep connected with us please login with your personal info.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="home" class="header">
+      <nav class="nav">
+        <a href="#" class="logo"
+          ><img src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
+        <ul class="main-nav hide-mobile">
+          <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
+          <li class="about">
+            <a href="#" class="about-link active-nav-link">About Us</a>
+            <div class="mega-menu mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              >About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#">
+              What We Do? <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li class="clients">
+            <a href="#">
+              Our Clients <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="s-welcome container">
+        <div class="account-lang">
+          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
+          <button class="btn-link log-in">Log In</button>
+        </div>
+      </div>
+    </header>
+    <section class="container posts">
+      <article class="pages post-content post-content-1" >
+        <img src="../image/social-media2.webp" alt="">
+          <h2>SOCIAL MEDIA AND YOU!!</h2>
+          <p><i class="fa-solid fa-circle"></i> Social Media have controlled our lives; many people have used them to connect with friends and family in all distant of the world, to make connections. Now when you search for work it’s not difficult it’s just to press on click you will find a million of job post & then you have to choose, if you working as a recruiter & headhunter it a lot of ways to find a candidate fit the vacancy, for example LinkedIn” Every decision you make with your LinkedIn profile can have an effect on your professionalism and credibility offline. You should take the time to connect with whom you really want to connect with before actually joining their network it’s a way to choose & screen without any costs.  While there’s a multitude of self-help guides preaching their own best practices for handling the negative aspects of social media.</p>
+          <p><i class="fa-solid fa-circle"></i> To build social media usage around the things that has our attention.But of course interactions on online social Media are not face-to-face and this may impact the trust you have in people online. It is this loss of trust that can affect subjective well-being rather than the online interaction itself.</p>
+      </article>
+      <article class="pages post-content post-content-2 " >
+          <img src="../image/old-school.png" alt="">
+          <h1>OLD SCHOOL RECRUITMENT PRACTICES, ARE THEY ENOUGH?</h1>
+          <p><i class="fa-solid fa-circle"></i> People have been staying with a company where they felt like they could at least predict where their future was going and that they’d have a job tomorrow but now it’s going to create more volatility among the workforce, because people will be more open to looking at other positions.</p>
+          <p><i class="fa-solid fa-circle"></i>Strategic recruitment is of vital importance in recruitment planning nowadays. Usefulness of generation approach in identifying the differences between the old generation and the young new generation considering the different needs and attitudes of both generations.</p>
+          <p><i class="fa-solid fa-circle"></i>This gives us an idea that the old recruitment practices might not be enough in today’s competitive environment.  Just how intense the competition is in the corporate world today and the fact that approach is so successful is astounding, although the benefits of Internet recruiting exceed drawbacks.</p>
+          <p><i class="fa-solid fa-circle"></i>This gives us an idea that the old recruitment practices might not be enough in today’s competitive environment.  Just how intense the competition is in the corporate world today and the fact that approach is so successful is astounding, although the benefits of Internet recruiting exceed drawbacks.</p>
+      </article>    
+      <article class="pages post-content post-content-3 ">
+          <img src="../image/leader-Ship.jpg" alt="">
+          <h1>LEADERSHIP … IT’S LESS ABOUT YOU, MORE ABOUT OTHERS</h1>
+          <p><i class="fa-solid fa-circle"></i> 
+LEADERSHIP … IT’S LESS ABOUT YOU, MORE ABOUT OTHERS
+When we think about leadership, it is easy to become confused by the current evidence about what that really means.</p>
+          <p><i class="fa-solid fa-circle"></i>Leadership is less about your needs and more about the needs of the people and the organization you are leading.</p>
+          <p><i class="fa-solid fa-circle"></i>Leadership is not something to be tried on like so many suits, to see which fits. Rather, they should be adapted to the particular demands of the situation, the particular requirements of the people involved and the particular challenges facing the organization.</p>
+          <p><i class="fa-solid fa-circle"></i>Leadership is the ability to increase a group toward the get the vision or set of goals. It is one of the managerial qualities of the company or the organization which interact with the workers of the organization. Leadership is the very big toll or the weapon of the organization to accomplish its goals and its necessary objectives and without it. it is impracticable for the organization to attain its main target. Without the leadership the implementation of tasks and their achievements are impossible.</p>
+          <p><i class="fa-solid fa-circle"></i>Organizations and managers are increasingly aware that they face a future of rapid and complex change. This wave of future oriented uncertainty, coupled with individual demands for increased participation at all levels of the organization, has dramatically changed perceptions of leadership, specifically with regard to the respective roles played by the leader and the follower. Almost all leadership theory is based on the relative importance assigned to the leader versus the follower in mission accomplishment. However one questions what effect this has on employee attitude and behavior. Although there are many factors affecting employee attitudes and behavior, research to date implies that these are influenced to some extent by leadership.</p>
+          <p><i class="fa-solid fa-circle"></i>The leader pays close attention to the inter-individual differences among the followers and act as mentor to the follower. He teaches and helps others develop their strengths, and listens attentively to others concerns Followers are treated individually in order to raise their levels of maturity and to enhance effective ways of addressing their goals and challenges.</p>
+      </article>
+      <article class="pages post-content post-content-4 ">
+          <h1>REBRANDING TO JAPANESE ACADEMY</h1>
+          <p><i class="fa-solid fa-circle"></i> Mr. Mohammed Ali -Narita group, CEO- announced that the group has been subject to the process of the complete renovation of rebranding, where it was officially announced the name change of Narita Academy the training arm of Narita group has been changed to Japanese Academy.</p>
+          <p><i class="fa-solid fa-circle"></i> It is also worth mentioning that the newly shaped Japanese Academy is extending a wide and fully diversified span of readymade and customized training programs, coupled by a competitive group of international professional certificates, and certified programs.</p>
+          <p><i class="fa-solid fa-circle"></i> On the other hand he said that Narita Group offers integrative services to all its clients, the huge diversified channels of services offered by the group represents a unique opportunity for those who are looking forward uniqueness in the quality of services they get and a guarantee to achieve the best results through all functions of the group which professionally cover consulting, recruitment and business venues services.</p>
+      </article>
+      <article class="pages post-content post-content-5 post-content-active " id="narita-launch">
+          <h1>NARITA GROUP TO LAUNCH ITS NEW WEB PORTAL</h1>
+          <p><i class="fa-solid fa-circle"></i> Narita group has launched the beta version of its new web portal which has been redesigned to match all the needs of our clients and to follow the latest standards of usability in order to provide our success partners with the best online experience.</p>
+          <p><i class="fa-solid fa-circle"></i>We are calling all of you to interact with us providing their your valued feedback and suggestions which we highly appreciate as the main driver of development and excellence.</p>
+      </article>
+    <aside>
+      <h2>Recent Post</h2>
+      <ul class="post-btns">
+        <li class="post-btn " data-num="1"> Social Media and You!</li>
+        <li class="post-btn" data-num="2">Old school recruitment practices, are they enough?</li>
+        <li class="post-btn"  data-num="3">Leadership... it's less about you more about others.</li>
+        <li class="post-btn " data-num="4">Rebranding to Japanese Academy</li>
+        <li class="post-btn post-btn-active"  data-num="5">Narita Groupe launch it's new web portal</li>
+      </ul>
+    </aside>
+    </section>
+   <footer class="footer section" id="contact">
+      <div class="row">
+        <div class="col">
+          <img class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+        </div>
+        <div class="col">
+          <h2>Office <div class="underline"><span></span></div></h2>
+          <address>
+            Narita Group Operational Office:
+            <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+          </address>
+        </div>
+        <div class="col others">
+          <h2>Other <div class="underline"><span></span></div></h2>
+          <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="staff-Zone.html">Staff Zone</a></li>
+            <li><a href="recent-post-launch.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="foot-msg-btns">
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
+          </div>
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
+            <div class="form-mail-info">
+            <i class="fa-solid fa-envelope"></i>
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
+          </div>
+          <div class="form-msg-tex">
+            <label for="customer-msg" class="visually-hidden">Your Message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          </form>
+          <div class="social-icon">
+            Follow us 
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
+  </body>
+</html>

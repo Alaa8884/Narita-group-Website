@@ -1,0 +1,407 @@
+
+<!--This is a clone version of Narita Group Website made by Alaa Mohammed Youssef as a gift to The best place in my heart-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Narita Group">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narita Group - Our Executive Team</title>
+    <link rel="stylesheet" href="../Css/normalize.css"/>
+    <link rel="stylesheet" href="../Css/all.min.css"/>
+    <link rel="stylesheet" href="../Css/our-team.css"/>
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap"
+    rel="stylesheet"
+    />
+    <script defer src="../js/our-team.js"></script>
+  </head>
+  <body>
+    <div class="modal log-form container hidden">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <h2 class="social-text">Or Sign up with social platforms</h2>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2>New here ?</h2>
+            <p>
+             Don't have an account yet? Enter your personal details and start journey with us.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome Back!</h3>
+            <p>
+              To keep connected with us please login with your personal info.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="home" class="header">
+      <nav class="nav">
+        <a href="#" class="logo"
+          ><img  src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
+        <ul class="main-nav hide-mobile">
+          <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
+          <li class="about">
+            <a href="#" class="about-link active-nav-link">About Us</a>
+            <div class="mega-menu mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              class="active-nav-link">About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#">
+              What We Do? <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li class="clients">
+            <a href="#">
+              Our Clients <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="s-welcome container">
+        <div class="account-lang">
+          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
+          <button class="btn-link log-in">Log In</button>
+        </div>
+      </div>
+    </header>
+    <section class="section container our-team">
+      <h1>Our Executive Team</h1>
+      <p><i class="fa-solid fa-circle"></i>The Executive Team challenge and purpose is to make a fundamental impact for carrying out the strategic leadership and management to our firm, our clients, and the world. Bringing together decades of experience, their direction puts Narita Group in the best position to make a lasting impact for our clients and society.</p>
+      <div class="slider">
+        <div class="slide">
+          <div class="employee">
+             <div class="employee-data">
+              <img  src="../image/our-people.jpg" alt="" class="employee-photo" /> 
+              <h2 class="employee-name">KARIM YEHIA</h2>
+              <h3 class="employee-position">The head of marketing at Narita Group.</h3>
+            </div>
+            <div class="employee-info">
+              Karim has over 10 years of experience in a wide range of marketing areas, with special passion to new media marketing, in both national and multinational environments and through different company maturity stages. Karim Yehia is currently the head of marketing at Narita Group.
+
+Prior Joining Narita Group, Karim has worked as the marketing director at Saudi Twasul Group and the Kuwaiti Mrsco Group where he was basically managing both marketing planning and communication of the IT arm of the group, iLead Integrated Solutions.
+
+Earlier in 2013, Karim has worked as a Sr. Marketing Consultant for CMCG UK strategic consulting in Cairo. Karim Yehia has worked as a Marketing Consultant at Quick-Wins in 2012 where he helped different SMEs and large firms in MENA and Gulf region. Karim Joined ATech Group In 2008 where he was responsible of project management as well to digital marketing consulting that he established a solid and successful e-transformation presence for the company’s clients, also Karim designed numerous online marketing strategies and campaigns for awareness, branding, increasing sales volume customer retention and diversified calls to actions.
+
+Karim has managed BConn international office in Khartoum-Sudan where he was basically responsible of managing marketing and business development.
+
+After finalizing the B.A. of Mass Communication, Karim had joined Al-Ahram newspaper as an Editor before his joining to Engineers Syndicate as a public relations and client management specialist earlier in 2005.
+
+Karim holds a bachelor of Mass Communication.
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="employee">
+             <div class="employee-data">
+               <img  src="../image/our-people.jpg" alt="" class="employee-photo" /> 
+              <h3 class="employee-name">AYMAN MOUSSA</h3>
+              <h4 class="employee-position">The human resources manager.</h4>
+            </div>
+            <div class="employee-info">
+              Ayman  is a results oriented professional with 10 years of human resources management experience working in the fields of  Healthcare, Manufacturing,  FMCG and start-ups. His  areas of expertise are in, Training and Development, compensation, & Benefits, employee relations, performance management, organizational development, and HRIS.
+
+Prior to joining Narita  Team, Ayman work history included the position as Group Human Resources Manager for Andalusia Group, one of the biggest Healthcare groups in Egypt and Saudi Arabia. While serving in the position his duties included creating the organization polices and Producers, working in close conjunction with the Line Manager and Chief Strategy & Program Management Officer to create and implement the annual HR plan in alignment with overall strategic aims managing strategic HR projects to facilitate the achievement of objectives as well as implementing policies and procedures designed to ensure the fair and equitable management of staff across the organization
+
+Prior to Andalusia Group he was the Senior HR specialist   for Egyptian German Company for Constructions He was Responsible for Developing and implementing all strategies for HR management and development and embedding robust departmental structures to facilitate the achievement of the organizational vision    and has been the Human Resources Specialist for Egypt Foods.
+
+Ayman holds a Bachelor’s degree in accounting.
+            </div>
+          </div>
+        </div>
+        <div class="slide small-content">
+          <div class="employee">
+             <div class="employee-data">
+               <img  src="../image/our-people.jpg" alt="" class="employee-photo" /> 
+              <h3 class="employee-name">NOUR AL-DEEN MAHMOUD</h3>
+              <h4 class="employee-position">The administration head at Narita Group.</h4>
+            </div>
+            <div class="employee-info">
+              Nour EL- Deen has joined the group earlier in 2003 where he went through the whole career path since he started as administration assistant passing by many promotions till holding his current position as the department head. During this period, Nour El-Deen has been moving across different offices for the group in Japan, UAE, Qatar, Kuwait and Malaysia supervising the implementation of the group expansion and administration strategies.
+Before joining Narita Group, Nour EL- Deen working as legal researcher in New Shahd Group in 2002.
+Nour EL- Deen holds a bachelor degree in law from the University of Ain Shams.
+            </div>
+          </div>
+        </div>
+        <div class="slide small-content">
+          <div class="employee">
+             <div class="employee-data">
+               <img  src="../image/our-people.jpg" alt="" class="employee-photo" /> 
+              <h3 class="employee-name">KAREEM ABDEL GHANY</h3>
+              <h4 class="employee-position">The s R&D consultant at Narita Group</h4>
+            </div>
+            <div class="employee-info">
+              Kareem is an Assistant Professor at the Department of Information Systems, Computers and Information, Beni-Suef University, Egypt.
+Kareem acquired his PhD Degree in Computer Sciences & Information from Cairo University with thesis title “An Intelligent Hybrid Biometrics System”. Earlier, Kareem received his Master Degree in Computer Sciences & Information from Cairo University with Thesis Title “Data Integration in Data Warehousing”.
+He received the B.Sc., degree in Information Systems from Sadat Academy in 2002.
+Kareem has published about 8 papers in Peer Reviewed International Conferences and still working on more.
+Kareem has participated in the committees of many International Conferences, also he participated as an Editorial Board Member for many International Journals and he organized many well-known technical workshops in several areas of professional experiences.
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn slider-btn-left" aria-label="button-left"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn slider-btn-right" aria-label="button-right"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <footer class="footer section" id="contact">
+      <div class="row">
+        <div class="col">
+          <img  class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+        </div>
+        <div class="col">
+          <h2>Office <div class="underline"><span></span></div></h2>
+          <address>
+            Narita Group Operational Office:
+            <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+          </address>
+        </div>
+        <div class="col others">
+          <h2>Other <div class="underline"><span></span></div></h2>
+          <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="staff-Zone.html">Staff Zone</a></li>
+            <li><a href="recent-post-launch.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="foot-msg-btns">
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
+          </div>
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
+            <div class="form-mail-info">
+            <i class="fa-solid fa-envelope"></i>
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
+          </div>
+          <div class="form-msg-tex">
+            <label for="customer-msg" class="visually-hidden">Your Message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          </form>
+         <div class="social-icon">
+            Follow us 
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
+  </body>
+</html>

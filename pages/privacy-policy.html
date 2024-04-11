@@ -1,0 +1,375 @@
+<!--This is a clone version of Narita Group Website made by Alaa Mohammed Youssef as a gift to The best place in my heart-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Narita Group">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narita Groupe - Privacy Policy</title>
+    <link rel="stylesheet" href="../Css/normalize.css" />
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <link rel="stylesheet" href="../Css/pages.css" />
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/pages.js"></script>
+  </head>
+  <body>
+    <div class="modal log-form container hidden">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <h2 class="social-text">Or Sign up with social platforms</h2>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2>New here ?</h2>
+            <p>
+             Don't have an account yet? Enter your personal details and start journey with us.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome Back!</h3>
+            <p>
+              To keep connected with us please login with your personal info.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="home" class="header">
+      <nav class="nav">
+        <a href="#" class="logo"
+          ><img src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
+        <ul class="main-nav hide-mobile">
+          <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
+          <li class="about">
+            <a href="#" class="about-link active-nav-link">About Us</a>
+            <div class="mega-menu mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              >About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#">
+              What We Do? <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li class="clients">
+            <a href="#">
+              Our Clients <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="s-welcome container">
+        <div class="account-lang">
+          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
+          <button class="btn-link log-in">Log In</button>
+        </div>
+      </div>
+    </header>
+    <section class="privacy pages container">
+          <h1>Privacy Policy</h1>
+          <div class=" pages-content">
+            <div class="privacy-text text">
+              <p>This Privacy Policy governs the manner in which Narita Group collects, uses, maintains and discloses information collected from users (each, a “User”) of the www.naritagroup.com website (“Site”). This privacy policy applies to the Site and all products and services offered by Narita Group.</p>
+              <h2>Personal identification information</h2>
+              <p>We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, subscribe to the newsletter, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.</p>
+              <h2>Non-personal identification information</h2>
+              <p>We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.</p>
+              <h2>Web browser cookies</h2>
+              <p>Our Site may use “cookies” to enhance User experience. User’s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</p>
+              <h2>How we use collected information</h2>
+              <p>Narita Group may collect and use Users personal information for the following purposes:</p>
+              <p class="note">– To improve customer service
+Information you provide helps us respond to your customer service requests and support needs more efficiently.</p>
+                <p class="note">– To personalize user experience
+We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.</p>
+                <p class="note">– To improve our Site
+We may use feedback you provide to improve our products and services.</p>
+                <p class="note">– To run a promotion, contest, survey or other Site feature
+To send Users information they agreed to receive about topics we think will be of interest to them.</p>
+                <p class="note">– To send periodic emails
+We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests. If User decides to opt-in to our mailing list, they will receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, they may do so by contacting us via our Site.</p>
+              <h2>How we protect your information</h2>
+              <p>We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.
+
+Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures.</p>
+                <h2>Sharing your personal information</h2>
+                <p>We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above. We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.</p>
+                <h2>Third party websites</h2>
+                <p>Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website’s own terms and policies.</p>
+                <h2>Changes to this privacy policy</h2>
+                <p>Narita Group has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+                <h2>Your acceptance of these terms</h2>
+                <p>By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
+                <h2>Contacting us</h2>
+                <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at: <br>
+Narita Group Operational Office:
+
+24th Youssef Abbas St. Nasr City Cairo, Egypt <br>
+<a href="tel:++20222611180">+20222611180</a> <br>
+<a href="mailto:info@naritagroup.com">info@naritagroup.com</a> <br>
+
+This document was last updated on <span class="privacy-date">April 1, 2024</span></p>
+              </div>
+          </div>
+    </section>
+    <footer class="footer section" id="contact">
+      <div class="row">
+        <div class="col">
+          <img class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+        </div>
+        <div class="col">
+          <h2>Office <div class="underline"><span></span></div></h2>
+          <address>
+            Narita Group Operational Office:
+            <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+          </address>
+        </div>
+        <div class="col others">
+          <h2>Other <div class="underline"><span></span></div></h2>
+          <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="staff-Zone.html">Staff Zone</a></li>
+            <li><a href="recent-post-launch.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="foot-msg-btns">
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
+          </div>
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
+            <div class="form-mail-info">
+            <i class="fa-solid fa-envelope"></i>
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
+          </div>
+          <div class="form-msg-tex">
+            <label for="customer-msg" class="visually-hidden">Your Message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          </form>
+          <div class="social-icon">
+            Follow us 
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
+  </body>
+</html>

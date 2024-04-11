@@ -1,0 +1,356 @@
+<!--This is a clone version of Narita Group Website made by Alaa Mohammed Youssef as a gift to The best place in my heart-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Narita Group">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narita Groupe - Terms and Conditions of Use</title>
+    <link rel="stylesheet" href="../Css/normalize.css" />
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <link rel="stylesheet" href="../Css/pages.css" />
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jomhuria&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/pages.js"></script>
+
+  </head>
+  <body>
+    <div class="modal log-form container hidden">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form" >
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <h2 class="social-text">Or Sign up with social platforms</h2>
+            <div class="social-media">
+              <a href="#" class="social-icon" aria-label="user-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="user-google">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
+
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2>New here ?</h2>
+            <p>
+             Don't have an account yet? Enter your personal details and start journey with us.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome Back!</h3>
+            <p>
+              To keep connected with us please login with your personal info.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="home" class="header">
+      <nav class="nav">
+        <a href="#" class="logo"
+          ><img src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
+        <ul class="main-nav hide-mobile">
+          <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
+          <li class="about">
+            <a href="#" class="about-link active-nav-link">About Us</a>
+            <div class="mega-menu mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              >About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#">
+              What We Do? <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-what">
+              <ul class="links">
+                <li>
+                  <a href="../index.html#training">Training</a>
+                </li>
+                <li>
+                  <a href="../index.html#consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="../index.html#recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="../index.html#business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="partnerships.html">Partnerships</a></li>
+          <li class="clients">
+            <a href="#">
+              Our Clients <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="s-welcome container">
+        <div class="account-lang">
+          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
+          <button class="btn-link log-in">Log In</button>
+        </div>
+      </div>
+    </header>
+    <section class="terms pages container">
+          <h1>Terms and Conditions of Use</h1>
+          <div class="term pages-content">
+            <div class="term-text text">
+              <h2> 1. Terms</h2>
+              <p> By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.</p>
+              <h2> 2. Use License</h2>
+              <p> Permission is granted to temporarily download one copy of the materials (information or software) on Narita Group’s web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:- modify or copy the materials;- use the materials for any commercial purpose, or for any public display (commercial or non-commercial).</p>
+              <p>– attempt to decompile or reverse engineer any software contained on Narita Group’s web site.</p>
+              <p>– remove any copyright or other proprietary notations from the materials.</p>
+              <p>– transfer the materials to another person or “mirror” the materials on any other server.</p>
+              <p>This license shall automatically terminate if you violate any of these restrictions and may be terminated by Narita Group at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</p>
+              <h2>3. Disclaimer</h2>
+              <p>The materials on Narita Group’s web site are provided “as is”. Narita Group makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Narita Group does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.</p>
+              <h2>4. Limitations</h2>
+              <p>In no event shall Narita Group or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on Narita Group’s Internet site, even if Narita Group or a Narita Group authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+              <h2>5. Revisions and Errata</h2>
+              <p>The materials appearing on Narita Group’s web site could include technical, typographical, or photographic errors. Narita Group does not warrant that any of the materials on its web site are accurate, complete, or current. Narita Group may make changes to the materials contained on its web site at any time without notice. Narita Group does not, however, make any commitment to update the materials.</p>
+              <h2>6. Links</h2>
+              <p>Narita Group has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Narita Group of the site. Use of any such linked web site is at the user’s own risk.</p>
+              <h2>7. Site Terms of Use Modifications</h2>
+              <p>Narita Group may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</p>
+              <h2>8. Governing Law</h2>
+              <p>Any claim relating to Narita Group’s web site shall be governed by the law without regard to its conflict of law provisions.</p>
+            </div>
+          </div>
+    </section>
+    <footer class="footer section" id="contact">
+      <div class="row">
+        <div class="col">
+          <img class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+        </div>
+        <div class="col">
+          <h2>Office <div class="underline"><span></span></div></h2>
+          <address>
+            Narita Group Operational Office:
+            <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+          </address>
+        </div>
+        <div class="col others">
+          <h2>Other <div class="underline"><span></span></div></h2>
+          <ul>
+            <li><a href="offices.html">Offices</a></li>
+            <li><a href="staff-Zone.html">Staff Zone</a></li>
+            <li><a href="recent-post-launch.html">Blog</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="foot-msg-btns">
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
+          </div>
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
+            <div class="form-mail-info">
+            <i class="fa-solid fa-envelope"></i>
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
+          </div>
+          <div class="form-msg-tex">
+            <label for="customer-msg" class="visually-hidden">Your Message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          </form>
+          <div class="social-icon">
+            Follow us 
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
+  </body>
+</html>

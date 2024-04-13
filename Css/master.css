@@ -905,6 +905,7 @@ header .s-welcome .youtube iframe {
   letter-spacing: 4px;
   background-image: linear-gradient(135deg, #7c030b, #e1131c, #330303, #d80000);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
 }

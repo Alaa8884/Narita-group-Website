@@ -720,6 +720,7 @@ section.pages {
   border-bottom: 1px solid black;
   background-image: linear-gradient(90deg, #d60303, #690101, #d60303, #5e0000);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 767px) {
@@ -816,6 +817,7 @@ section.pages {
   background-image: linear-gradient(135deg, #817273, #ca0a14, #644040, #f24645);
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;

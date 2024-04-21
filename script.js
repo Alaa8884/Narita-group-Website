@@ -48,7 +48,6 @@ const stickyNav = function (entries) {
     HomeLink.classList.add('active-nav-link');
     whatWeDo.classList.remove('active-nav-link');
     scrollUpBtn.style.display = 'none';
-
   }
 };
 
@@ -111,4 +110,3 @@ msgContainerBtns.addEventListener('click', function (e) {
   msgInputEmail.setAttribute('name', clicked.getAttribute('data-tab'));
   clicked.classList.add('msg-btn-active');
 });
-

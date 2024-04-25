@@ -17,7 +17,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   scrollbar-color: #e3030f var(--main-alt-color);
 }
 
@@ -944,16 +944,16 @@ header .s-welcome .youtube iframe {
   background-color: transparent;
 }
 
-.container div.section-hidden:nth-child(2) {
+.container div.section-hidden:nth-child(1) {
   transition-delay: 0.3s;
 }
 
 .container div.section-hidden:nth-child(2) {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 
 .container div.section-hidden:nth-child(3) {
-  transition-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 
 .training .container {
@@ -1641,7 +1641,7 @@ footer form .form-msg-tex button i {
   position: relative;
   z-index: 10;
   overflow: hidden;
-   border-radius: 50%;
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;

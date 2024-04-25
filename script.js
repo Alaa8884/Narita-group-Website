@@ -110,3 +110,11 @@ msgContainerBtns.addEventListener('click', function (e) {
   msgInputEmail.setAttribute('name', clicked.getAttribute('data-tab'));
   clicked.classList.add('msg-btn-active');
 });
+
+scrollUpBtn.addEventListener('click', function () {
+  this.scrollTo({
+    top: 100,
+    left: 100,
+    behavior: 'smooth',
+  });
+});

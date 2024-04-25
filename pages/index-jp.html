@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Css/normalize.css" />
     <link rel="stylesheet" href="../Css/all.min.css" />
     <link rel="stylesheet" href="../Css/master.css" />
-    <link rel="shortcut icon" href="image/narita_logo.png" />
+    <link rel="shortcut icon" href="../image/narita_logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,65 +23,70 @@
     <div class="modal log-form container hidden">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="#" class="sign-in-form" >
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <label for="username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="username" autocomplete="on"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <label for="log-in-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="log-in-pass"autocomplete="on"/>
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-twitter">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-google">
                 <i class="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
-            <p class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></p>
+            <h2 class="close-text">For Exit Press "Esc" or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <label for="sign-up-username" class="visually-hidden">Username</label>
+              <input type="text" placeholder="Username" id="sign-up-username" autocomplete="on"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <label for="sign-up-email" class="visually-hidden">Email</label>
+              <input type="email" placeholder="Email" id="sign-up-email"autocomplete="on" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <label for="sign-up-pass" class="visually-hidden">Password</label>
+              <input type="password" placeholder="Password" id="sign-up-pass" autocomplete="on"/>
             </div>
             <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
+            <h2 class="social-text">Or Sign up with social platforms</h2>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-twitter">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon" aria-label="user-google">
                 <i class="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon"aria-label="user-linkedin-in" >
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
-            <p class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></p>
+            <h2 class="close-text">For Exit Press "Esc" or or Click <i class="fa-solid fa-circle-xmark close-form"></i></h2>
 
           </form>
         </div>
@@ -89,7 +94,7 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h2>New here ?</h2>
             <p>
              Don't have an account yet? Enter your personal details and start journey with us.
             </p>
@@ -97,7 +102,6 @@
               Sign up
             </button>
           </div>
-          <!-- <img src="image/narita_logo.png" class="image-form" alt="logo" /> -->
         </div>
         <div class="panel right-panel">
           <div class="content">
@@ -109,22 +113,92 @@
               Sign in
             </button>
           </div>
-          <!-- <img src="image/narita_logo.png" class="image-form" alt="" /> -->
         </div>
       </div>
     </div>
-    <header id="header" class="header">
-      <nav class="nav">
+    <header id="home" class="header">
+       <nav class="nav">
         <a href="#" class="logo"
           ><img src="../image/narita_logo_master12.png" alt="Narita-logo"/></a>
         <ul class="main-nav hide-mobile">
           <li class="home"><a href="../index.html" class="home-link ">Home</a></li>
           <li class="about">
-            <a href="about.html" class="about-link active-nav-link">About Us</a>
+            <a href="#" class="about-link ">About Us</a>
             <div class="mega-menu mega-about">
               <ul class="links">
                 <li>
                   <a href="overview.html" target="_self">Overview</a>
+                </li>
+                <li>
+                  <a href="our-philosophy.html" target="_self">Our Philosophy</a>
+                </li>
+                <li>
+                  <a href="our-values.html" target="_self">Our Values</a>
+                </li>
+                <li>
+                  <a href="our-executive-team.html" target="_self">Our Executive Team</a>
+                </li>
+                <li>
+                  <a href="our-people.html" target="_self">Our People</a>
+                </li>
+                <li>
+                  <a href="pressroom.html" target="_self">Pressroom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="what">
+            <a href="#" class="what-link">What We Do?</a>
+            <div class="mega-menu mega-what">
+              <ul class="links">
+                <li>
+                  <a href="#training">Training</a>
+                </li>
+                <li>
+                  <a href="consulting">Consulting</a>
+                </li>
+                <li>
+                  <a href="recruitment">Recruitment</a>
+                </li>
+                <li>
+                  <a href="business-venues">Business Venues</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
+          <li class="clients">
+            <a href="#" class="our-clients-link">Our Clients</a>
+            <div class="mega-menu mega-clients">
+              <ul class="links">
+                <li>
+                  <a href="our-clients.html">Our Clients</a>
+                </li>
+                <li>
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
+          <li class="contact"><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+         <span class="open-bar">
+         <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="sidebar">
+          <li class="close">
+            <i class="fa-solid fa-circle-xmark close-btn"></i>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="about">
+            <a href="#"
+              >About Us <i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mega-menu2 mega-about">
+              <ul class="links">
+                <li>
+                  <a href="overview.html">Overview</a>
                 </li>
                 <li>
                   <a href="our-philosophy.html">Our Philosophy</a>
@@ -145,80 +219,7 @@
             </div>
           </li>
           <li class="what">
-            <a href="what-do.html" class="what-link">What We Do?</a>
-            <div class="mega-menu mega-what">
-              <ul class="links">
-                <li>
-                  <a href="../index.html#training">Training</a>
-                </li>
-                <li>
-                  <a href="../index.html#consulting">Consulting</a>
-                </li>
-                <li>
-                  <a href="../index.html#recruitment">Recruitment</a>
-                </li>
-                <li>
-                  <a href="../index.html#business-venues">Business Venues</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="partnerships"><a href="partnerships.html" class="partnerships-link">Partnerships</a></a>
-          <li class="clients">
-            <a href="#our-clients" class="our-clients-link">Our Clients</a>
-            <div class="mega-menu mega-clients">
-              <ul class="links">
-                <li>
-                  <a href="#our-clients">Our Clients</a>
-                </li>
-                <li>
-                  <a href="#testimonials">Testimonials</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="rewards"><a href="rewards.html" class="rewards-link">Rewards</a></li>
-          <li class="contact"><a href="contact.html" class="contact-link">Contact</a></li>
-        </ul>
-        <span class="open-bar">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <ul class="sidebar">
-          <div class="close">
-            <i class="fa-solid fa-circle-xmark close-btn"></i>
-          </div>
-          <li><a href="../index.html">Home</a></li>
-          <li class="about">
-            <a href="#about"
-              >About Us <i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="mega-menu2 mega-about">
-              <ul class="links">
-                <li>
-                  <a href="#overview">Overview</a>
-                </li>
-                <li>
-                  <a href="#our-philosophy">Our Philosophy</a>
-                </li>
-                <li>
-                  <a href="#our-values">Our Values</a>
-                </li>
-                <li>
-                  <a href="#our-executive-team">Our Executive Team</a>
-                </li>
-                <li>
-                  <a href="#our-people">Our People</a>
-                </li>
-                <li>
-                  <a href="#pressroom">Pressroom</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="what">
-            <a href="what-do.html">
+            <a href="#">
               What We Do? <i class="fa-solid fa-chevron-left"></i
             ></a>
             <div class="mega-menu2 mega-what">
@@ -240,177 +241,193 @@
           </li>
           <li><a href="partnerships.html">Partnerships</a></li>
           <li class="clients">
-            <a href="#our-clients">
+            <a href="#">
               Our Clients <i class="fa-solid fa-chevron-left"></i
             ></a>
             <div class="mega-menu2 mega-clients">
               <ul class="links">
                 <li>
-                  <a href="#our-clients">Our Clients</a>
+                  <a href="our-clients.html">Our Clients</a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
+                  <a href="testimonials.html">Testimonials</a>
                 </li>
               </ul>
             </div>
           </li>
           <li><a href="rewards.html">Rewards</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="s-welcome container">
         <div class="account-lang">
-          <button class="btn-link translate"><a href="index-jp.html" class="translate-link" title="Translate to Japanese" target="_self">日本語</a></button>
-          <button class="btn-link log-in"><a href="#log-in-link">Log In</a></button>
+          <button class="btn-link translate"><a href="../index.html" class="translate-link" title="Translate to Japanese" target="_self">En</a></button>
+          <button class="btn-link log-in">Log In</button>
         </div>
-      </div>
+        <div class="text">
+          <h1>Welcome, To <span>Narita</span> <span>Group</span></h1>
+          <h2>We are The power of Knowledge</h2>
+        </div>
+       <div class="youtube">  
+          <iframe
+            src="https://www.youtube.com/embed/_1g-3vrYR4g?si=vM343vs4BVQqg5CG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+     </div>
     </header>
     <div class="wave-bottom"></div>
-    <section class="training section section-hidden" id="training">
+    <section class="training section " id="training">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-hidden">
           <h1>Training</h1>
         </div>
         <div class="content">
           <p><i class="fa-solid fa-circle"></i> Narita Group is extending a wide and fully diversified span of regular and customized training programs, coupled by a competitive group of international professional certificates, and certified programs.</p>
-          <p><i class="fa-solid fa-circle"></i> Furthermore, it is Narita Group’s responsibility to provide top quality training responding to the root cause of corporate training needs commonly faced or tailored to meet different challenges. Such a quality is intended without compromising the affordability of the delivered coursed and programs.</p>
+          <p ><i class="fa-solid fa-circle"></i> Furthermore, it is Narita Group’s responsibility to provide top quality training responding to the root cause of corporate training needs commonly faced or tailored to meet different challenges. Such a quality is intended without compromising the affordability of the delivered coursed and programs.</p>
           <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit Training gate</a>
         </div>
-        <div class="page-menu">
+        <div class="page-menu section-hidden">
           <ul class="section-links">
-          <li class="link"><a href="">Language School</a></li>
-          <li class="link"> <a href="">Business School</a></li>
-          <li class="link"><a href="">IT School</a></li>
-          <li class="link"><a href="">Business Tools</a></li>
+          <li class="link"><a href="#">Language School</a></li>
+          <li class="link"> <a href="#">Business School</a></li>
+          <li class="link"><a href="#">IT School</a></li>
+          <li class="link"><a href="#">Business Tools</a></li>
           </ul>
-          <ul class="section-links">
-          <li class="link"><a href="">Methodology</a></li>
-          <li class="link"><a href="">Calender</a></li>
-          <li class="link"><a href="">Certificate Inquiry</a></li>
+          <ul class="section-links section-hidden">
+          <li class="link"><a href="#">Methodology</a></li>
+          <li class="link"><a href="#">Calender</a></li>
+          <li class="link"><a href="#">Certificate Inquiry</a></li>
           </ul>
         </div>
       </div> 
     </section>
     <div class="wave-bottom"></div>
-    <section class="consulting section section-hidden" id="consulting">
+    <section class="consulting section " id="consulting">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-hidden">
           <h1>CONSULTING</h1>
         </div>
-        <div class="content">
+        <div class="content section-hidden">
           <p><i class="fa-solid fa-circle"></i> Narita Group consultancy helps clients to enhance productivity, unlock innovation and drive corporate performance and value to be able to reinvent themselves with increasing global competition and customer expectations over ten countries, the United States, Japan, the United Arab Emirates, Egypt, Saudi Arabia, Kuwait, Qatar, Oman, Bahrain and Sudan with an ongoing ambitious expansion plan that keeps us permanently close to our clients.</p>
           <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit Consulting gate</a>
         </div>
-        <div class="page-menu">
+        <div class="page-menu section-hidden">
           <ul class="section-links">
-          <li class="link"><a href="">Overview</a></li>
-          <li class="link"> <a href="">What We Do</a></li>
-          <li class="link"><a href="">Publications</a></li>
-          <li class="link"><a href="">PartnerShips</a></li>
+          <li class="link"><a href="#">Overview</a></li>
+          <li class="link"> <a href="#">What We Do</a></li>
+          <li class="link"><a href="#">Publications</a></li>
+          <li class="link"><a href="#">PartnerShips</a></li>
           </ul>
         </div> 
       </div>
     </section>
     <div class="wave-bottom"></div>
-    <section class="recruitment section section-hidden" id="recruitment">
+    <section class="recruitment section" id="recruitment">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-hidden">
           <h1>Recruitment</h1>
         </div>
-        <div class="content">
+        <div class="content section-hidden">
           <p><i class="fa-solid fa-circle"></i> We provide a customer focused approach to recruitment with honest, focused, reliable and offered knowledge and expertise. We deliver fast, efficient and cost effective solutions to our customers with our specialist consultative approach to understanding of the markets, businesses and individuals to deliver a seamless and comprehensive recruitment solution.</p>
-          <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit recruitment gate</a>
+          <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit Recruitment gate</a>
         </div>
-        <div class="page-menu">
-          <ul class="section-links">
-          <li class="link"><a href="">Employers</a></li>
-          <li class="link"> <a href="">Jobs Seeker</a></li>
-          <li class="link"><a href="">Post Job</a></li>
-          <li class="link"><a href="">Search Job</a></li>
+        <div class="page-menu ">
+          <ul class="section-links section-hidden">
+          <li class="link"><a href="#">Employers</a></li>
+          <li class="link"> <a href="#">Jobs Seeker</a></li>
+          <li class="link"><a href="#">Post Job</a></li>
+          <li class="link"><a href="#">Search Job</a></li>
           </ul>
-          <ul class="section-links">
-          <li class="link"><a href="">Build C.V</a></li>
-          <li class="link"><a href="">Search C.V</a></li>
+          <ul class="section-links section-hidden">
+          <li class="link"><a href="#">Build C.V</a></li>
+          <li class="link"><a href="#">Search C.V</a></li>
           </ul>
         </div>
       </div> 
     </section>
     <div class="wave-bottom"></div>
-    <section class="business-venues section section-hidden" id="business-venues">
+    <section class="business-venues section " id="business-venues">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-hidden">
           <h1>BUSINESS VENUES SERVICES</h1>
         </div>
-        <div class="content">
+        <div class="content section-hidden">
           <p><i class="fa-solid fa-circle"></i> Narita Group has some of the biggest and most modern training campuses, their location is convenient, close to many business centers around. The campuses have a specialized library with excellent diversified collection of books, researches and knowledge aid tools, movable class room settings to support and accommodate the training methodology.</p>
           <p><i class="fa-solid fa-circle"></i> Our campuses also provide fully equipped computer labs with high speed internet access, along with the latest video-audio technology training tools.</p>
           <p><i class="fa-solid fa-circle"></i> Its concept as an educational complex is designed to accommodate courses, comprehensive programs as well as different events: conferences, exhibitions, seminars and workshops all under one roof.</p>
-          <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit recruitment gate</a>
+          <a href="#"><i class="fa-solid fa-house-chimney"></i> Visit Business Venue gate</a>
         </div>
-        <div class="page-menu">
+        <div class="page-menu section-hidden">
           <ul class="section-links">
-          <li class="link"><a href="">About Business Venues</a></li>
-          <li class="link"> <a href="">Activities</a></li>
-          <li class="link"><a href="">Meetings</a></li>
-          <li class="link"><a href="">Events</a></li>
+          <li class="link"><a href="#">About Business Venues</a></li>
+          <li class="link"> <a href="#">Activities</a></li>
+          <li class="link"><a href="#">Meetings</a></li>
+          <li class="link"><a href="#">Events</a></li>
           </ul>
         </div>
       </div> 
     </section>
-    <footer class="footer section">
+    <footer class="footer section" id="contact">
       <div class="row">
         <div class="col">
-          <img class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
+          <img loading="lazy" class="foot-logo section-hidden" src="../image/Narita.png" alt="Narita Kanji Logo">
         </div>
         <div class="col">
-          <h3>Office <div class="underline"><span></span></div></h3>
+          <h2>Office <div class="underline"><span></span></div></h2>
           <address>
             Narita Group Operational Office:
             <p>4th Youssef Abbas St. Nasr City Cairo, Egypt.</p>
-           <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
-           <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
+            <p><i class="fa-solid fa-envelope"></i> <a class="mail" href="mailto:info@naritagroup.com">info@naritagroup.com</a></p> 
+            <p><i class="fa-solid fa-phone"></i><a href="tel:+201144000454">+201144000454</a></p> 
           </address>
-          
         </div>
         <div class="col others">
-          <h3>Other <div class="underline"><span></span></div></h3>
+          <h2>Other <div class="underline"><span></span></div></h2>
           <ul>
-            <li><a href="offices">Offices</a></li>
-            <li><a href="staff-Zone">Staff Zone</a></li>
-            <li><a href="blog">Blog</a></li>
-            <li><a href="careers">Careers</a></li>
-            <li><a href="terms-of-use">Terms of Use</a></li>
-            <li><a href="privacy-policy">Privacy Policy</a></li>
+            <li><a href="pages/offices.html">Offices</a></li>
+            <li><a href="pages/staff-zone.html">Staff Zone</a></li>
+            <li><a href="pages/recent-post-launch.html">Blog</a></li>
+            <li><a href="pages/careers.html">Careers</a></li>
+            <li><a href="pages/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="col">
           <div class="foot-msg-btns">
-            <h3 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h3>
-            <h3 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h3>
-            <h3 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h3>
+            <h2 class="contact-us msg-btn msg-btn-active" data-tab="contact-us">Contact Us<div class="underline"><span></span></div></h2>
+            <h2 class="request-meeting  msg-btn" data-tab="request-meeting">Request Meeting <div class="underline"><span></span></div></h2>
+            <h2 class="newsletter  msg-btn" data-tab="newsletter">Newsletter <div class="underline"><span></span></div></h2>
           </div>
-          <form  action="#" method="post" id="form-msg-1" target="_self" class="form-msg form-msg-1">
+          <form  action="#" method="post" id="form-msg-1" target="_blank" class="form-msg form-msg-1">
             <div class="form-mail-info">
             <i class="fa-solid fa-envelope"></i>
-            <input class="msg-email" type="email" name="msg-email" id="email" placeholder="Enter Your Email Id" required autocomplete="on">
+            <label for="customer-email" class="visually-hidden">Email</label>
+            <input class="msg-email" type="email" name="msg-email" id="customer-email" placeholder="Enter Your Email Id" required autocomplete="on">
           </div>
           <div class="form-msg-tex">
-            <textarea class="msg-text" name="msg-text" id="msg" placeholder="Please type your message here" required></textarea>
-            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            <label for="customer-msg" class="visually-hidden">Your message</label>
+            <textarea class="msg-text" name="msg-text" id="customer-msg" placeholder="Please type your message here" required></textarea>
+            <button type="submit" aria-label="send-message" title="send-message"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
           </form>
           <div class="social-icon">
             Follow us 
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/japaneseAcademy/" aria-label="narita-facebook-page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/narita-group/"  aria-label="narita-linkedin-page"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/AcademyNarita"  aria-label="narita-twitter-page"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/narita.academy"  aria-label="narita-instagram-page"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@naritaacademy-5612"  aria-label="narita-youtube-page"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
     </footer>
-    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>
-      <div class="overlay overlay-hidden"></div>
+    <p class="copy-right"><span>Narita</span> Group &copy; <span class="copy-year">2024</span> All Rights Reserved.</p>    
+    <div class="overlay overlay-hidden"></div>
+    <div class="scroll-up-btn"><a href="#home" aria-label="scroll up button"><i class="fa-solid fa-angles-up"></i></a></div>
   </body>
 </html>

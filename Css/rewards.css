@@ -1113,11 +1113,12 @@ footer {
   width: fit-content;
   margin-top: 10px;
   margin-bottom: 15px;
-  & a {
+  
+}
+.col address p a {
     color: #fff;
     text-decoration: none;
   }
-}
 .col address p:hover a {
   color: var(--main-color);
 }
@@ -1138,12 +1139,10 @@ footer {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-
-  & a {
+}
+.col li a {
     color: #fff;
   }
-}
-
 .col.others li:hover a {
   color: var(--main-color);
 }
